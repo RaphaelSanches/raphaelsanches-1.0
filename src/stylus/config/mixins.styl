@@ -1,0 +1,23 @@
+// Mixins
+//---------------------------------------------------------------------------------------
+
+
+//Media queries
+	
+media_queries = {
+	mobile  : "only screen and (max-width: 550px)",
+	tablet  : "only screen and (min-width: 551px) and (max-width: 1000px)",
+	max-tablet  : "only screen and (max-width: 1000px)",
+	min-tablet  : "only screen and (min-width: 551px)",
+	desktop : "only screen and (min-width: 1001px)"
+}
+
+
+bp(breakpoints)
+	conditions = ()
+	for breakpoint in breakpoints
+		push(conditions, media_queries[breakpoint])
+	conditions = join(", ", conditions)
+	@media conditions
+	{block}
+	
