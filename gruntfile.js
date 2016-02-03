@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
     
     	my_target : {
     		files : {
-          'assets/js/script-min.js' : ['src/js/**/*.js'], // arquivo minificado [ arquivo original]
+          'assets/js/script-min.js' : ['src/js/*.js'], // arquivo minificado [ arquivo original]
     		}
     	}
     },
