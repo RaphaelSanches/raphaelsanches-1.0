@@ -8,13 +8,19 @@
 	<meta name="author" content="Raphael Sanches">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript,JQuery,Design,Designer,São Paulo,Sanches,Front-end,Desenvolvimento,Interface,Apaixonado,Programação,Iniciante">
 	<title>Raphael Sanches - Designer e desenvolvedor front-end</title>
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 	<link rel="icon" href="assets/imgs/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
-	<nav role="navigation"> 
+	<nav class="nav-bar not-scrolled"role="navigation">
+		<div class="container">
+			<object data="assets/imgs/logo-raphael-sanches.svg" type="image/svg+xml" class="nav-bar__logo">
+				<img src="img/icone.png">
+			</object>
 
 <!-- 		<div class="wrap">
 			<img class="logo" src="img/logosemnome.svg" alt="Raphael Sanches - Designer e desenvolvedor front-end" title="Raphael Sanches - Designer e desenvolvedor front-end">
@@ -25,22 +31,59 @@
 	    	</ul>
 	    </div> 
  -->
+ 		</div>
 	</nav>
-
-	<header class="content__section content__section--banner" role="banner">
-<!-- 		<picture>
-		    <source srcset="assets/imgs/capa-2000.jpg" media="(min-width: 1401px)" />
-		    <img srcset="assets/imgs/capa-1400.jpg" alt="Imagem ilustrativa de Design (lápis e um bloco de papel) e Programação (tela de código)" />
-		</picture> -->d
+	
+	<!-- Banner section -->
+	<header class="content__section content__section--banner" role="banner" id="banner">
 		<div class="banner__caption">
 			<img src="assets/imgs/perfil.png" alt="Foto de Raphael Sanches" class="banner__caption__picture">
+			<h1 class="banner__caption__title">Raphael Sanches </h1>
+			<h2 class="banner__caption__subtitle">Designer<br>Desenvolvedor Front-end</h2>
 		</div>
 	</header>
-	
-	<!-- QUad section -->
+
+	<!-- Detail bar -->
+	<div class="detail-bar__wrap cf">	
+		<div class="detail-bar"></div>
+		<div class="detail-bar"></div>
+		<div class="detail-bar"></div>
+	</div>
+
+	<!-- Quad section -->
 	<section class="content__section">
+		<div class="container">
+			<h2 class="content__section__title">//Sobre</h2>
+			<div class="quad-container">
+				<div class="quad-container__text text-right">19 anos. Dividido.<br>De um lado a veia criativa pulsa, do outro a complexidade dos códigos me atrai.</div>
+
+			</div>
+
+			<div class="quad-container">
+				<img src="assets/imgs/workspace.jpg" alt="">
+				<div class="quad-container__text text-left color-white">É um amor repartido <br>por design e <br>programação.</div>
+			</div>
+			<div class="quad-container"></div>
+			<div class="quad-container"></div>
+		</div>	
 	</section>
 
+	<!-- Portfólio -->
+	<section class="content__section">
+		<div class="container">
+			<h2 class="content__section__title">//Portfólio</h2>
+			<a href="http://www.projetonexus.esy.es" target="_blank" title="Nexus - Arte telemática" class="portfolio-item">
+				<img src="assets/imgs/portfolio/nexus.jpg" alt="Projeto Nexus">
+			</a>
+			<a href="#" target="_blank" title="Bia Bazolli - Fotografia" class="portfolio-item">
+				<img src="assets/imgs/portfolio/bia-bazzolli.jpg" alt="">
+			</a>
+
+			<a href="#" target="_blank" class="portfolio-item">
+				<img src="assets/imgs/portfolio/bia-bazzolli.jpg" alt="">
+			</a>
+		</div>	
+	</section>
 	<script type="text/javaScript" src="assets/js/script-min.js"></script>
 </body>
 </html>

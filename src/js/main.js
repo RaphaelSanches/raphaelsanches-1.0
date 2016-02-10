@@ -1,18 +1,17 @@
 //O DOM está pronto!
 (function (){
+	//Declaração de variáveis
 
-	// //altura do banner
-	// function alturaTela(){
+	var bannerHeight = $('#banner').height()
 
-	//     var alturaTelaValor = $(window).height();
-	//     $(".content__section.content__section--banner").css("height", alturaTelaValor);
+	$(window).scroll(function(){
+		if($(this).scrollTop() > bannerHeight){
+			$('.nav-bar').removeClass('not-scrolled').addClass('scrolled');
+		}
 
- //    }
-
- //    alturaTela();
-
- //    $(window).resize(function(event){
- //   		alturaTela();
- //    });
+		else{
+			$('.nav-bar').removeClass('scrolled').addClass('not-scrolled');
+		}
+	});
 
  }) ();

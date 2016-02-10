@@ -1,0 +1,15 @@
+//HELPERS
+//------------------------------------------------------------------
+
+
+// Corrige a altura de elementos pai com elementos filhos que possuem float
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

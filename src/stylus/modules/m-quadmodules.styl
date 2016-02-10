@@ -1,0 +1,49 @@
+//Quad modules
+.quad-container
+	background #fff
+	position relative
+	+bp(min-tablet)
+		padding-bottom 41%
+		width 50%
+		height 0
+		float left
+		
+.quad-container__text
+	padding .9em .3em
+	color R-red
+	font-weight 300
+	font-size 3.8em
+	
+	+bp(min-tablet)
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		width 100%
+		padding .1em
+	
+	+bp(desktop)
+		font-size 5.7em
+
+	&.text-right
+		text-align center
+		+bp(min-tablet)
+			text-align right
+			padding .1em .6em .1em 0
+	
+	&.text-left
+		text-align center
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		+bp(max-tablet)
+			left 50%
+			transform translate(-50%, -50%)
+		+bp(min-tablet)
+			text-align left
+			padding .1em 0 .1em .6em
+			
+	&.color-white
+		color #fff
+		
+
+//End quad modules
