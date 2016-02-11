@@ -198,6 +198,7 @@ body {
 img {
   width: 100%;
   max-width: 100%;
+  vertical-align: top;
 }
 .cf:before,
 .cf:after {
@@ -253,8 +254,8 @@ img {
 }
 .banner__caption .banner__caption__title {
   font-weight: normal;
-  margin-bottom: 0.2em;
-  margin-top: 0.6em;
+  margin-bottom: 0.15em;
+  margin-top: 0.55em;
   font-size: 5em;
   text-shadow: 0px 1px 6px #000;
 }
@@ -271,8 +272,17 @@ img {
 }
 @media only screen and (min-width: 1001px) {
   .banner__caption .banner__caption__subtitle {
-    font-size: 5.5em;
+    font-size: 5em;
   }
+}
+.btn-down {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
 }
 .detail-bar__wrap {
   width: 100%;
@@ -295,10 +305,28 @@ img {
   max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
+  zoom: 1;
+}
+.container:after,
+.container:before {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
 }
 .content__section {
   padding: 4em 0;
   position: relative;
+  zoom: 1;
+}
+.content__section:after,
+.content__section:before {
+  content: "";
+  display: table;
+}
+.content__section:after {
+  clear: both;
 }
 .content__section__title {
   display: block;
@@ -378,10 +406,20 @@ img {
 .portfolio-item {
   width: 50%;
   float: left;
+  overflow: hidden;
+  transition: 0.5s ease all;
+  cursor: pointer;
 }
 @media only screen and (min-width: 1001px) {
   .portfolio-item {
     width: 33.33%;
     float: left;
   }
+}
+.portfolio-item:hover img {
+  width: 800px;
+}
+.portfolio-item.blurred {
+  -webkit-filter: blur(2.5px);
+  filter: blur(2.5px);
 }
