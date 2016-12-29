@@ -1,92 +1,142 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta name="description" content="E aí, beleza? Meu nome é Raphael Sanches, sou designer, desenvolvedor front-end e amante de CSS. Entra aí pra me conhecer melhor :)">
+<meta name="author" content="Raphael Sanches">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript,JQuery,Design,Designer,São Paulo,Sanches,Front-end,Desenvolvimento,Interface,Apaixonado,Programação,Iniciante">
 
-	<meta name="description" content="E aí, beleza? Meu nome é Raphael Sanches, sou designer, desenvolvedor front-end e amante de CSS. Entra aí pra me conhecer melhor :)">
-	<meta name="author" content="Raphael Sanches">
-	<meta name="keywords" content="HTML,CSS,XML,JavaScript,JQuery,Design,Designer,São Paulo,Sanches,Front-end,Desenvolvimento,Interface,Apaixonado,Programação,Iniciante">
-	<title>Raphael Sanches - Designer e desenvolvedor front-end</title>
-	
-	<link rel="icon" href="assets/imgs/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<title>Raphael Sanches - Designer e desenvolvedor front-end</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="icon" href="img/favicon.png" />
+
 
 
 </head>
+
 <body>
-	<nav class="nav-bar not-scrolled"role="navigation">
-		<div class="container">
-			<object data="assets/imgs/logo-raphael-sanches.svg" type="image/svg+xml" class="nav-bar__logo">
-				<img src="img/icone.png">
-			</object>
+<div class="load-overlay"></div>
+<nav role="menu"> 
+	<div class="wrap">
+		<img class="logo" src="img/logosemnome.svg" alt="Raphael Sanches - Designer e desenvolvedor front-end" title="Raphael Sanches - Designer e desenvolvedor front-end">
+    	<ul class="menu">
+    		<a href="#home" class="active"><li role="menuitem">//Home</li></a>
+	       	<a href="#sobre"><li role="menuitem">//Sobre</li></a>
+    	   	<a href="#portfólio"><li role="menuitem">//Portfólio</li></a>
+    	</ul>
+    </div> 
+    
+</nav>
 
-<!-- 		<div class="wrap">
-			<img class="logo" src="img/logosemnome.svg" alt="Raphael Sanches - Designer e desenvolvedor front-end" title="Raphael Sanches - Designer e desenvolvedor front-end">
-	    	<ul class="menu">
-	    		<a href="#home" class="active"><li role="menuitem">//Home</li></a>
-		       	<a href="#sobre"><li role="menuitem">//Sobre</li></a>
-	    	   	<a href="#portfólio"><li role="menuitem">//Portfólio</li></a>
-	    	</ul>
-	    </div> 
- -->
- 		</div>
-	</nav>
-	
-	<!-- Banner section -->
-	<header class="content__section content__section--banner" role="banner" id="banner">
-		<div class="banner__caption">
-			<img src="assets/imgs/perfil.png" alt="Foto de Raphael Sanches" class="banner__caption__picture">
-			<h1 class="banner__caption__title">Raphael Sanches </h1>
-			<h2 class="banner__caption__subtitle">Designer<br>Desenvolvedor Front-end</h2>
-		</div>
-		<a href="#" class="btn-down"></a>
+    
+<section class="home" role="banner" id="home">
+        <img src="img/perfil.png" class="wow fadeInDown" data-wow-delay="2s" alt="Raphael Sanches - Designer e desenvolvedor front-end" title="Raphael Sanches - Designer e desenvolvedor front-end">
+        <h1 class="wow fadeInDown" data-wow-delay="2s" >Raphael Sanches</h1>
+        <h2 class="wow fadeInUp" data-wow-delay="3s">Designer e desenvolvedor front-end</h2>
+</section>
 
-	</header>
-
-	<!-- Detail bar -->
-	<div class="detail-bar__wrap cf">	
-		<div class="detail-bar"></div>
-		<div class="detail-bar"></div>
-		<div class="detail-bar"></div>
+	<div class="linha_colorida">
+		<div class="amarelo"></div><div class="laranja_claro"></div><div class="laranja_escuro"></div>
 	</div>
 
-	<!-- Quad section -->
-	<section class="content__section">
-		<div class="container">
-			<h2 class="content__section__title">//Sobre</h2>
-			<div class="quad-container">
-				<div class="quad-container__text text-right">19 anos. Dividido.<br>De um lado a veia criativa pulsa, do outro a complexidade dos códigos me atrai.</div>
+<section class="sobre cf" id="sobre">
+	<div class="wrap">
+	    <h1 class="wow fadeInLeft " data-wow-delay="0.5s">//Sobre</h1>
+        
+       	<div class="quad"><h2>19 anos. Dividido.<br>De um lado a veia criativa pulsa, do outro a complexidade dos códigos me atrai</h2></div>
+        <div class="quad">
+            <h2 style="position:relative; top:130px; text-align:left; right:0px; left:50px;">Amor repartido <br>por design e programação</h2>
+        </div>
+       	<div class="quad">
+            <div class="habilidades">
+                <img src="img/webdesign.png" class="wow fadeInUp" data-wow-delay="0.5s" alt="Design de interfaces" title="Design de interfaces">
+                <h3>Design de interfaces</h3>
+            </div>
+            
+            <div class="habilidades">
+                <img src="img/htmlcss.png" class="wow fadeInUp" data-wow-delay="0.5s" alt="HTML e CSS" title="Desenvolvimento de sites">
+                <h3>HTML e CSS</h3>
+            </div>
+            
+            <div class="habilidades">
+                <img src="img/branding.png" class="wow fadeInUp" data-wow-delay="0.5s" alt="branding" title="Construção de marcas">
+                <h3>Branding</h3>
+            </div>
+            
+            <div class="habilidades">
+                <img src="img/wordpress.png" class="wow fadeInUp" data-wow-delay="0.5s" alt="wordpress" title="wordpress">
+                <h3>Wordpress</h3>
+            </div>
+        </div>
+       	
+        <div class="quad">
+            <h3>Atualmente sou estudante de design digital e realizo trabalhos na área. Detesto ferramentas que trazem tudo pronto ou que tiram o controle do desenvolvimento, comigo o negócio é na unha. <br><br>
+                
+Alguns dos meus conhecimentos estão listados ao lado, se tem dúvidas ou deseja um orçamento, basta enviar um email que rápidinho eu respondo.<br><br> raphael.lsanches@hotmail.com
+<br><br>
+ </h3>
+        </div>
+    </div>    
+</section>
 
-			</div>
+<section class="portfolio" id="portfólio">
+	<div class="wrap">
+    	<h1 class="wow fadeInLeft " data-wow-delay="0.5s">//Portfólio</h1>
+        <div class="item_portfolio wow fadeInUp" data-wow-delay="0.5s">
+            <a href="http://alicesoueu.com.br/" target="_blank"><h1>Alice Sou eu</h1></a>
+            <h2>//tema do wordpress</h2>
+            <h2>//site responsivo</h2>
+            <a href="http://alicesoueu.com.br/" target="_blank"><div class="cover"></div></a>
+            <img src="img/alicesoueu.jpg">
+        </div>
+        <div class="item_portfolio wow fadeInUp" data-wow-delay="0.5s">
+            <a href="http://bauhouse.zz.mu/" target="_blank"><h1>Bauhouse</h1></a>
+            <h2>//Desenvolvimento em html + css</h2>
+            <h2>//animações em css</h2>
+	      	<a href="http://bauhouse.zz.mu/" target="_blank"><div class="cover"></div></a>
+            <img src="img/bauhouse.jpg">
 
-			<div class="quad-container">
-				<img src="assets/imgs/workspace.jpg" alt="">
-				<div class="quad-container__text text-left color-white">É um amor repartido <br>por design e <br>programação.</div>
-			</div>
-			<div class="quad-container"></div>
-			<div class="quad-container"></div>
-		</div>	
-	</section>
+        </div>
+        <div class="item_portfolio wow fadeInUp" data-wow-delay="0.5s">
+            <a href="http://biabazollifotografia.com.br" target="_blank"><h1>Bia Bazzoli - Fotografia</h1></a>
+            <h2>//Design da interface</h2>
+            <h2>//Desenvolvimento em html + css</h2>
 
-	<!-- Portfólio -->
-	<section class="content__section" id="portfolio">
-		<div class="container">
-			<h2 class="content__section__title">//Portfólio</h2>
-			<div class="portfolio-item">
-				<img src="assets/imgs/portfolio/nexus.jpg" alt="Projeto Nexus">
-			</div>
-			<div class="portfolio-item">
-				<img src="assets/imgs/portfolio/bia-bazzolli.jpg" alt="">
-			</div>
+            <a href="http://biabazollifotografia.com.br" target="_blank"><div class="cover"></div></a>
+            <img id="img_portf" src="img/bia_bazoli.jpg">
 
-			<div class="portfolio-item">
-				<img src="assets/imgs/portfolio/bia-bazzolli.jpg" alt="">
-			</div>
-		</div>	
-	</section>
-	<script type="text/javaScript" src="assets/js/script-min.js"></script>
+        </div>
+
+        <a class="botao_portfolio wow bounceIn" data-wow-delay="1s" href="https://www.behance.net/T1mcampy" target="_blank" title="Raphael Sanches - Portfólio no Behance">
+                <p>+</p>
+        </a>
+
+        <a class="botao_portfolio wow bounceIn" data-wow-delay="1s" href="https://github.com/RaphaelSanches/" target="_blank" title="Raphael Sanches - Repositório do GitHub">
+                <p>+</p>
+        </a>
+    </div>
+    
+</section>
+
+<h4>Feito com amor, carinho e wow.js<br> Raphael Sanches - raphael.lsanches@hotmail.com - (11) 99510-1928 </h4>
+
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery-min.js"></script>
+<script type="text/javascript" src="js/myscroll.js"></script>
+
+<!-- Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69202714-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
-
