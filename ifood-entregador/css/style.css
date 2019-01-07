@@ -1,0 +1,515 @@
+/*
+TOURISM AND THE CITY - CSS
+By Rachel Sarra and Raphael Sanches
+*/
+
+/* Sul sans regular */
+@font-face {
+  font-family: 'Sul Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sul Sans'), local('Sul-Sans'), url(../fonts/sul-sans-regular.woff) format('woff'), url(../fonts/sul-sans-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Sul Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Sul Sans'), local('Sul-Sans'), url(../fonts/sul-sans-light.woff) format('woff'), url(../fonts/sul-sans-light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Sul Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sul Sans'), local('Sul-Sans'), url(../fonts/sul-sans-bold.woff) format('woff'), url(../fonts/sul-sans-bold.otf) format('opentype');
+}
+
+
+
+/* GENERAL */
+/*------------------------------------*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: vinyl,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul li {
+  margin:0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: 0;
+  list-style: none;
+}
+
+
+@media (min-width: 901px)
+{
+  body {
+  }
+}
+
+/* WRAPPER */
+/*------------------------------------*/
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1490px;
+  padding: 0 20px;
+  zoom: 1;
+}
+
+.wrapper:after, .wrapper:before {
+    content: "";
+    display: table;
+}
+
+.wrapper:after {
+    clear: both;
+}
+
+@media (min-width: 901px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+
+/* CLEARFIX */
+/*------------------------------------*/
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after, .wrapper:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* COVER */
+/*------------------------------------*/
+
+.cover-section {
+  width: 100%;
+  position: relative;
+}
+
+.cover-logo {
+  width: 77px;
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cover-image {
+  position: absolute;
+  left: 0;
+  bottom: 85px;
+}
+
+.cover-arrow {
+  width: 33px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.cover-background-image img{
+  width: 100%;
+  max-width: none;
+}
+
+
+@media (min-width: 901px) {
+  .cover-section .wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cover-logo {
+    width: 100px;
+    top: 45px;
+    left: 5vw;
+    transform: translateX(0);
+  }
+
+  .cover-image {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cover-arrow {
+    width: 45px;
+    bottom: 20px;
+  }
+}
+
+/* TOPICS */
+/*------------------------------------*/
+
+.topics-section {
+  background: #F5E9DA;
+  padding: 50px 0 20px;
+}
+
+.topic-title {
+  width: 220px;
+  font-size: 3rem;
+  font-family: Vinyl, sans-serif;
+  color: #3F3E3E;
+  margin: 0 auto 0 auto;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.topic-wrapper {
+  position: relative;
+  padding-top: 25px;
+}
+
+.owl-item {
+  opacity: .25
+}
+
+.owl-item.active {
+  opacity: 1;
+}
+
+.topic-item {
+  min-height: 250px;
+  border: 1px solid #A6A29F;
+  padding: 50px 17px 18px 17px;
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+  overflow: visible;
+}
+
+.topic-wrapper .topic-item > img {
+  width: 64px;
+  position: absolute;
+  top: -30px;
+  left: 17px;
+  padding: 0 8px;
+  background: #F5E9DA;
+  z-index: 2;
+}
+
+.topic-item > h3 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.topic-item > p {
+  font-family: "Sul Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin: 10px 0 0;
+}
+
+.owl-nav {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  position: absolute;
+  width: 13px;
+  left: 8px;
+}
+
+.owl-next {
+  position: absolute;
+  width: 13px;
+  right: 8px;
+}
+
+
+@media (min-width: 901px) {
+  /* equal height */
+  .owl-stage {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .owl-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+
+  .topics-section {
+    padding: 120px 0 100px;
+  }
+
+  .topic-title {
+    width: auto;
+    font-size: 5.4rem;
+    margin-bottom: 20px;
+  }
+
+  .topic-item {
+    padding: 50px 20px 25px 27px;
+    min-height: auto;
+    border-width: 2px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .topic-wrapper .topic-item > img {
+    width: 78px;
+    left: 26px;
+  }
+
+  .topic-item > h3 {
+    font-size: 2.6rem
+  }
+
+  .topic-item > p {
+    font-size: 1.3rem;
+    line-height: 1.7
+  }
+
+  .owl-prev, .owl-next{
+    width: 20px;
+  }
+  .owl-prev img, .owl-next img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1401px) {
+  .topic-item > h3 {
+    font-size: 2.8rem
+  }
+
+  .topic-item > p {
+    font-size: 1.5rem;
+  }
+}
+
+/* HIGHLIGHTS */
+/*------------------------------------*/
+
+.highlight-section {
+
+}
+
+.highlight-item {
+  padding: 50px 0;
+  position: relative;
+}
+
+.highlight-item:nth-child(odd) {
+  background: #fff;
+}
+
+.highlight-item:nth-child(even) {
+  background: #F5E9DA;
+}
+
+.highlight-title {
+  font-size: 4.8rem;
+  font-family: vinyl, "Sul Sans", sans-serif;
+  margin: 0;
+  color: #3F3E3E;
+  text-transform: uppercase;
+}
+
+.highlight-description {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2;
+  font-family: "Sul Sans", sans-serif;
+  margin-bottom: 30px;
+  color: #A6A29F;
+}
+
+.highlight-item:nth-child(even) .highlight-description {
+  color: #3F3E3E;
+}
+
+.highlight-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 901px) {
+  .highlight-item {
+    height: 680px;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
+
+  .highlight-title {
+    font-size: 7.5rem;
+  }
+
+  .highlight-description {
+    font-size: 2rem;
+  }
+
+  .highlight-image {
+    width: 45%;
+    max-width: 600px;
+  }
+
+  .highlight-item:nth-child(odd) .highlight-content {
+    width: 45%;
+    max-width: 580px;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .highlight-item:nth-child(odd) .highlight-image{
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    transform: translateY(-50%);
+  }
+
+  .highlight-item:nth-child(even) .highlight-content {
+    width: 45%;
+    max-width: 580px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+  }
+
+  .highlight-item:nth-child(even) .highlight-image{
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1401px) {
+  .highlight-item {
+    height: 800px;
+  }
+
+  .highlight-title {
+    font-size: 8.5rem;
+  }
+
+  .highlight-description {
+    width: 580px;
+    font-size: 2.2rem;
+  }
+
+  .highlight-item:nth-child(odd) .highlight-content, .highlight-item:nth-child(even) .highlight-content {
+    bottom: 60px;
+  }
+
+}
+
+
+.footer {
+  background: #EA1D2C;
+  padding: 45px 0 65px;
+}
+
+.footer-logo {
+  width: 90px;
+  margin: 0 auto 50px auto;
+}
+
+.footer-content {
+
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: vinyl, "Sul Sans", sans-serif;
+  color: #FFDFBB;
+  margin-bottom: 10px;
+}
+
+.footer-img-store {
+  width: 164px;
+  margin: 0 auto;
+}
+
+@media (min-width: 901px) {
+  .footer {
+    padding: 52px 0;
+  }
+
+  .footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer .wrapper::before, .footer .wrapper::after {
+    display: none;
+  }
+
+  .footer-logo{
+    margin: 0;
+    width: 100px;
+  }
+
+  .footer-text {
+    font-size: 3.3rem;
+    margin: 0;
+  }
+}
