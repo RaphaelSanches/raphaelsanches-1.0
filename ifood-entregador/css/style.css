@@ -159,6 +159,14 @@ ul li {
   max-width: none;
 }
 
+.cover-link {
+  position: absolute;
+  left: 45.83%;
+  top: 92.87%;
+  width: 32.64%;
+  height: 7.13%;
+  z-index: 2;
+}
 
 @media (min-width: 901px) {
   .cover-section .wrapper {
@@ -177,7 +185,7 @@ ul li {
 
   .cover-image {
     width: 60%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
@@ -186,6 +194,21 @@ ul li {
   .cover-arrow {
     width: 45px;
     bottom: 20px;
+  }
+
+  .cover-link {
+    left: 41.38%;
+    top: 69.38%;
+    width: 19.8%;
+    height: 9.03%;
+  }
+}
+
+@media (min-width: 1931px) {
+  .cover-image {
+    width: 75%;
+    max-width: 2000px;
+    bottom: 180px;
   }
 }
 
@@ -463,8 +486,27 @@ ul li {
     bottom: 60px;
   }
 
+  .highlight-item:nth-child(odd) .highlight-image{
+    right: 8vw;
+    max-width: 680px;
+  }
+
+  .highlight-item:nth-child(even) .highlight-image{
+    left: 8vw;
+    max-width: 680px;
+  }
+
 }
 
+@media (min-width: 1931px) {
+  .highlight-item:nth-child(even) .highlight-image{
+    left: 15vw;
+  }
+
+  .highlight-item:nth-child(odd) .highlight-image{
+    right: 15vw;
+  }
+}
 
 .footer {
   background: #EA1D2C;

@@ -41,14 +41,22 @@
       <meta name="twitter:description" content="Disponível no Google Play">
 
 
-      <link href="css/vendor/reset.css" rel="stylesheet">
-      <link href="css/vendor/owl.carousel.min.css" rel="stylesheet">
-      <link href="css/vendor/owl.theme.default.min.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+
+      <link href="css/style.min.css" rel="stylesheet">
 
       <!-- Typekit Vinyl OT font -->
       <link rel="stylesheet" href="https://use.typekit.net/chv7qzt.css">
       <title>iFood - Chegou o novo aplicativo para entregadores!</title>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128438948-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128438948-1');
+      </script>
     </head>
 
     <body>
@@ -62,10 +70,16 @@
         <div class="wrapper">
           <img class="cover-logo" src="img/logo.png" alt="iFood">
 
-          <picture class="cover-image">
-            <source srcset="img/d-cover.png" media="(min-width: 901px)">
-            <img src="img/m-cover.png" alt="Chegou o novo aplicativo para entregadores! Disponível no Google Play">
-          </picture>
+          <div class="cover-image">
+            <picture>
+              <source srcset="img/d-cover.png" media="(min-width: 901px)">
+              <img src="img/m-cover.png" alt="Chegou o novo aplicativo para entregadores! Disponível no Google Play">
+            </picture>
+
+            <a class="cover-link" href="https://play.google.com/store/apps/details?id=br.com.ifood.driver.app&hl=pt_BR" title="Chegou o novo aplicativo para entregadores! Disponível no Google Play" target="
+            "></a>
+          </div>
+
         </div>
 
         <img class="cover-arrow" src="img/arrow-down.svg" alt="">
@@ -146,15 +160,15 @@
         <article class="highlight-item">
           <div class="wrapper">
             <div class="highlight-content">
-              <h2 class="highlight-title">Acesso rápido</h2>
+              <h2 class="highlight-title" data-aos="fade-left" data-aos-delay="1000">Acesso rápido</h2>
 
-              <p class="highlight-description">Além do botão para ficar disponível ou indisponível para entregas, no novo aplicativo <strong>você visualiza o seu desempenho na data de hoje, região em que você está no momento, avisos e restrições.</strong> É só clicar nos painéis para ver mais informações.</p>
+              <p class="highlight-description" data-aos="fade-left" data-aos-delay="1050">Além do botão para ficar disponível ou indisponível para entregas, no novo aplicativo <strong>você visualiza o seu desempenho na data de hoje, região em que você está no momento, avisos e restrições.</strong> É só clicar nos painéis para ver mais informações.</p>
             </div>
           </div>
 
-          <picture class="highlight-image">
+          <picture class="highlight-image" >
             <source srcset="img/highlights/1-d-acesso-rapido.png" media="(min-width: 901px)">
-            <img srcset="img/highlights/1-m-acesso-rapido.png" alt="…">
+            <img srcset="img/highlights/1-m-acesso-rapido.png" alt="…" data-aos="fade-up">
           </picture>
 
         </article>
@@ -163,15 +177,15 @@
         <article class="highlight-item">
           <div class="wrapper">
             <div class="highlight-content">
-              <h2 class="highlight-title">Desempenho</h2>
+              <h2 class="highlight-title" data-aos="fade-right" data-aos-delay="1000">Desempenho</h2>
 
-              <p class="highlight-description">No novo aplicativo você visualiza seus ganhos em tempo real e todo o seu histórico como entregador. Ao clicar em “ver desempenho completo” você tem acesso, com total praticidade, aos <strong>seus ganhos, a quantidade de pedidos entregues, ofertas aceitas, ofertas rejeitadas e até rotas desalocadas.</strong></p>
+              <p class="highlight-description" data-aos="fade-right" data-aos-delay="1050">No novo aplicativo você visualiza seus ganhos em tempo real e todo o seu histórico como entregador. Ao clicar em “ver desempenho completo” você tem acesso, com total praticidade, aos <strong>seus ganhos, a quantidade de pedidos entregues, ofertas aceitas, ofertas rejeitadas e até rotas desalocadas.</strong></p>
             </div>
           </div>
 
           <picture class="highlight-image">
             <source srcset="img/highlights/2-d-desempenho.png" media="(min-width: 901px)">
-            <img srcset="img/highlights/2-m-desempenho.png" alt="…">
+            <img srcset="img/highlights/2-m-desempenho.png" alt="…" data-aos="fade-up">
           </picture>
         </article>
 
@@ -179,15 +193,15 @@
         <article class="highlight-item">
           <div class="wrapper">
             <div class="highlight-content">
-              <h2 class="highlight-title">Suporte</h2>
+              <h2 class="highlight-title" data-aos="fade-left" data-aos-delay="1000">Suporte</h2>
 
-              <p class="highlight-description">Agora, quando surgir qualquer dúvida relacionada ao aplicativo, cadastro, entregas ou pagamentos através de máquina é só clicar no ícone “?”. <strong>Lá respondemos as principais dúvidas dos entregadores, e se não encontrar sua dúvida, é só abrir um chamado</strong> rolando a tela até o final.</p>
+              <p class="highlight-description" data-aos="fade-left" data-aos-delay="1050">Agora, quando surgir qualquer dúvida relacionada ao aplicativo, cadastro, entregas ou pagamentos através de máquina é só clicar no ícone “?”. <strong>Lá respondemos as principais dúvidas dos entregadores, e se não encontrar sua dúvida, é só abrir um chamado</strong> rolando a tela até o final.</p>
             </div>
           </div>
 
           <picture class="highlight-image">
             <source srcset="img/highlights/3-d-suporte.png" media="(min-width: 901px)">
-            <img srcset="img/highlights/3-m-suporte.png" alt="…">
+            <img srcset="img/highlights/3-m-suporte.png" alt="…" data-aos="fade-up">
           </picture>
         </article>
 
@@ -195,15 +209,15 @@
         <article class="highlight-item">
           <div class="wrapper">
             <div class="highlight-content">
-              <h2 class="highlight-title">Perfil</h2>
+              <h2 class="highlight-title" data-aos="fade-right" data-aos-delay="1000">Perfil</h2>
 
-              <p class="highlight-description">Aqui você pode adicionar uma foto sua, editar o seu e-mail, o telefone cadastrado, a região de entrega, incluir dados bancários e veículos.</p>
+              <p class="highlight-description" data-aos="fade-right" data-aos-delay="1050">Aqui você pode adicionar uma foto sua, editar o seu e-mail, o telefone cadastrado, a região de entrega, incluir dados bancários e veículos.</p>
             </div>
           </div>
 
           <picture class="highlight-image">
             <source srcset="img/highlights/4-d-perfil.png" media="(min-width: 901px)">
-            <img srcset="img/highlights/4-m-perfil.png" alt="…">
+            <img srcset="img/highlights/4-m-perfil.png" alt="…" data-aos="fade-up">
           </picture>
         </article>
 
@@ -211,15 +225,15 @@
         <article class="highlight-item">
           <div class="wrapper">
             <div class="highlight-content">
-              <h2 class="highlight-title">Ajustes</h2>
+              <h2 class="highlight-title" data-aos="fade-left" data-aos-delay="1000">Ajustes</h2>
 
-              <p class="highlight-description">Em ajustes você tem acesso às informações do aplicativo como versão atual, versão do Android e qual aparelho você está usando. Além disso, é <strong>onde você consegue parear a sua máquina de pagamentos (caso possua).</strong></p>
+              <p class="highlight-description" data-aos="fade-left" data-aos-delay="1050">Em ajustes você tem acesso às informações do aplicativo como versão atual, versão do Android e qual aparelho você está usando. Além disso, é <strong>onde você consegue parear a sua máquina de pagamentos (caso possua).</strong></p>
             </div>
           </div>
 
           <picture class="highlight-image">
             <source srcset="img/highlights/5-d-ajustes.png" media="(min-width: 901px)">
-            <img srcset="img/highlights/5-m-ajustes.png" alt="…">
+            <img srcset="img/highlights/5-m-ajustes.png" alt="…" data-aos="fade-up">
           </picture>
         </article>
       </section>
@@ -230,14 +244,14 @@
 
           <div class="footer-content">
             <p class="footer-text">BAIXE AGORA</p>
-            <img class="footer-img-store" src="img/google-play-footer.png" alt="">
+            <a href="https://play.google.com/store/apps/details?id=br.com.ifood.driver.app&hl=pt_BR" target="_blank">
+              <img class="footer-img-store" src="img/google-play-footer.png" alt="Disponível em Google play">
+            </a>
           </div>
         </div>
       </footer>
     </body>
 
-    <script src="js/vendor/jquery.js" type="text/javascript"></script>
-    <script src="js/vendor/picturefill.min.js" type="text/javascript"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/script.js?v=1.2" type="text/javascript"></script>
+
+    <script src="js/script.min.js" type="text/javascript"></script>
 </html>
